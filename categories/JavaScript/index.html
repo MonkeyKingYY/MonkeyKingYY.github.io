@@ -52,10 +52,24 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="程序猿小野" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="程序猿小野" type="application/atom+xml">
 </head>
+
+<!-- <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script> -->
+
+<!-- <script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script> -->
+
+<script>
+
+ // 对所有链接跳转事件绑定pjax容器navContainer
+//  $(document).pjax('a:not(a[target="_blank"])', '#pjax-container', {fragment: '#pjax-container', timeout: 8000});
+
+
+</script>
+
+  
 
 
 <body>
@@ -311,14 +325,15 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
+    <main id="pjax-container">
+        <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
                 
-                程序猿小野
+                前端攻城狮-程序猿小野
                 
             </div>
 
@@ -380,11 +395,56 @@
                 
                 
                 
-                <a href="/categories/JavaScript/" title="JavaScript: 1">
+                <a href="/categories/JavaScript/" title="JavaScript: 21">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
                             style="background-color: #F9EBEA;">JavaScript
+                        <span class="tag-length">21</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/ElementUI/" title="ElementUI: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F5EEF8;">ElementUI
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/Vue2-0/" title="Vue2.0: 3">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #D5F5E3;">Vue2.0
+                        <span class="tag-length">3</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/CSS3/" title="CSS3: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #E8F8F5;">CSS3
                         <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/IE%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/" title="IE浏览器兼容性问题: 5">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #FEF9E7;">IE浏览器兼容性问题
+                        <span class="tag-length">5</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/MySQL/" title="MySQL: 6">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F8F9F9;">MySQL
+                        <span class="tag-length">6</span>
                     </span>
                 </a>
                 
@@ -402,24 +462,497 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2023/06/06/yuan-sheng-js-shi-xian-vue-shuang-xiang-shu-ju-bang-ding/">
+                    <a href="/2024/04/27/xiang-jie-promise/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="原生js实现vue双向数据绑定">
+                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="详解Promise">
                             
-                            <span class="card-title">原生js实现vue双向数据绑定</span>
+                            <span class="card-title">详解Promise</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                基于Object.defineProperty使用原生的js实现vue双向数据绑定
+                                
+
+1.1. Promise 是什么?
+
+1.1.1. 理解
+
+1. 抽象表达:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Promise 是一门新的技术(ES6规范)
+
+&nb
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-27
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E5%89%8D%E7%AB%AF-javascript-%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80-es6/">
+                            <span class="chip bg-color">前端 javascript 开发语言 es6</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2024/04/27/js-huo-qu-cao-zuo-xi-tong-de-fang-fa/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="JS获取操作系统的方法">
+                            
+                            <span class="card-title">JS获取操作系统的方法</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+
+function getOperationSystemInfo() {
+    let sUserAgent = window.navigator.userAgent.toLocaleLowerCase();
+    let isWin
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-27
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/javascript-%E5%89%8D%E7%AB%AF-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                            <span class="chip bg-color">javascript 前端 操作系统</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2024/04/26/shou-dong-shi-xian-promise/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="手动实现 Promise">
+                            
+                            <span class="card-title">手动实现 Promise</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+
+class Promise {
+    constructor(executor) {
+        // 添加属性
+        this.PromiseState = "pending";
+        this.Promis
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-26
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/javascript-%E5%89%8D%E7%AB%AF-es6/">
+                            <span class="chip bg-color">javascript 前端 es6</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2024/04/25/xiang-jie-js-zhong-de-console-dui-xiang/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="详解js中的console对象">
+                            
+                            <span class="card-title">详解js中的console对象</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+
+对于前端开发而言，console对象大家肯定都很熟悉，最常用的 console.log() 是开发调试必用的
+
+但是对于console对象的其他方法，相对而言使用的就比较少了。下面详细介绍一下：
+
+谷歌浏览器输出console对象：
+
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/javascript-%E5%89%8D%E7%AB%AF-%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80-IE%E6%B5%8F%E8%A7%88%E5%99%A8/">
+                            <span class="chip bg-color">javascript 前端 开发语言 IE浏览器</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2023/11/06/js-pan-duan-dui-xiang-shi-fou-bao-han-mou-ge-key/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="js判断对象是否包含某个key">
+                            
+                            <span class="card-title">js判断对象是否包含某个key</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+
+1. 使用&nbsp;in&nbsp;运算符：
+
+如果对象&nbsp;obj&nbsp;或其原型链中包含名为 “key” 的属性，则返回&nbsp;true。
+    如果对象&nbsp;obj&nbsp;不包含名为 “key” 的属性
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-06
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/javascript-%E5%89%8D%E7%AB%AF-vue-js/">
+                            <span class="chip bg-color">javascript 前端 vue.js</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2023/11/02/zui-quan-xiang-jie-urlsearchparams/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="（最全）详解 URLSearchParams">
+                            
+                            <span class="card-title">（最全）详解 URLSearchParams</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+
+定义：URLSearchParams&nbsp;是一个 JavaScript 内置类，用于处理 URL 查询字符串（query string）的解析和构建。
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-02
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E5%89%8D%E7%AB%AF-javascript-%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80/">
+                            <span class="chip bg-color">前端 javascript 开发语言</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2023/10/30/xiang-jie-url-de-zu-cheng-yi-ji-huo-qu-url-ge-bu-fen-de-fang-fa/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="详解URL的组成以及获取URL各部分的方法">
+                            
+                            <span class="card-title">详解URL的组成以及获取URL各部分的方法</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+
+浏览器的URL是统一资源定位器 （&nbsp;Uniform Resource Locator&nbsp;）的缩写。
+
+一个完整的URL通常由以下几个部分组成：
+
+1. 协议（Protocol）
+
+
+&nbsp;&nbsp;&nbsp;
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-30
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/javascript-%E5%89%8D%E7%AB%AF/">
+                            <span class="chip bg-color">javascript 前端</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2023/10/24/xiang-jie-localstorage-he-sessionstorage-yi-ji-liang-zhe-de-qu-bie/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="详解localStorage和sessionStorage，以及两者的区别">
+                            
+                            <span class="card-title">详解localStorage和sessionStorage，以及两者的区别</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+
+localStorage：
+
+&nbsp; &nbsp;localStorage&nbsp;是浏览器提供的一种客户端存储机制，用于在用户的浏览器中存储键值对形式的数据。下面是关于&nbsp;localStorage&nbsp;的详细解释
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-24
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80-javascript-%E5%89%8D%E7%AB%AF/">
+                            <span class="chip bg-color">开发语言 javascript 前端</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2023/10/11/xiang-jie-object.is-fang-fa-yi-ji-yu-bi-jiao-cao-zuo-fu-de-qu-bie/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="详解Object.is()方法，以及与比较操作符“===”、“==”的区别？">
+                            
+                            <span class="card-title">详解Object.is()方法，以及与比较操作符“===”、“==”的区别？</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用双等号==进行相等判断时，如果两边的类型不一致，则会进 行强制类型转化后再进行比较。
+
+
+
+&nbsp;&nbsp;&nbsp;&n
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E5%89%8D%E7%AB%AF-javascript-%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80/">
+                            <span class="chip bg-color">前端 javascript 开发语言</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2023/08/23/16-javascript-ru-he-pan-duan-shu-ju-lei-xing-yi-ji-typeof-instanceof-de-qu-bie-object.prototype.tostring-de-fan-hui-zhi/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="JavaScript如何判断数据类型，以及typeof 、instanceof 的区别，Object.prototype.toString的返回值">
+                            
+                            <span class="card-title">JavaScript如何判断数据类型，以及typeof 、instanceof 的区别，Object.prototype.toString的返回值</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                JavaScript如何判断数据类型
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-23
                             </span>
                             <span class="publish-author">
                                 
@@ -441,10 +974,6 @@
                             <span class="chip bg-color">JavaScript</span>
                         </a>
                         
-                        <a href="/tags/Vue/">
-                            <span class="chip bg-color">Vue</span>
-                        </a>
-                        
                     </div>
                     
                 </div>
@@ -455,7 +984,32 @@
 </main>
 
 
+<div class="container paging">
+    <div class="row">
+        <div class="col s6 m4 l4">
+            
+            <a class="left btn-floating btn-large disabled">
+                <i class="fas fa-angle-left"></i>
+            </a>
+            
+        </div>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">1 / 3</div>
+        </div>
+        <div class="col s6 m4 l4">
+            
+            <a href="/categories/JavaScript/page/2/"
+               class="right btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fas fa-angle-right"></i>
+            </a>
+            
+        </div>
+    </div>
+</div>
 
+
+
+    </main>
 
     <footer class="page-footer bg-color">
     
@@ -495,7 +1049,7 @@
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="3138200095"
+                   id="12289532682"
                    fixed='true'
                    autoplay='false'
                    theme='#42b983'
@@ -511,6 +1065,10 @@
 
 <script src="/libs/aplayer/APlayer.min.js"></script>
 <script src="/libs/aplayer/Meting.min.js"></script>
+
+
+
+  
 
     
 
@@ -528,7 +1086,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">782</span>
+                        class="white-color">68.6k</span>
             
             
             

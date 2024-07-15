@@ -52,10 +52,24 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="程序猿小野" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="程序猿小野" type="application/atom+xml">
 </head>
+
+<!-- <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script> -->
+
+<!-- <script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script> -->
+
+<script>
+
+ // 对所有链接跳转事件绑定pjax容器navContainer
+//  $(document).pjax('a:not(a[target="_blank"])', '#pjax-container', {fragment: '#pjax-container', timeout: 8000});
+
+
+</script>
+
+  
 
 
 <body>
@@ -311,7 +325,8 @@
 
 </header>
 
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <main id="pjax-container">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
 <link rel="stylesheet" type="text/css" href="/css/barrager.css">
 <script src="/libs/valine/av-min.js"></script>
 <script src="/libs/jquery/jquery.min.js"></script>
@@ -324,7 +339,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                程序猿小野
+                前端攻城狮-程序猿小野
                 
             </div>
 
@@ -403,26 +418,51 @@
         <!--其他评论card-->
         <div class="card">
             
-                <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
+                <!-- <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css"> -->
 
 <div class="card gitalk-card" data-aos="fade-up">
-    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+    <div
+        class="comment_headling"
+        style="
+            font-size: 20px;
+            font-weight: 700;
+            position: relative;
+            padding-left: 20px;
+            top: 15px;
+            padding-bottom: 5px;
+        "
+    >
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
     <div id="gitalk-container" class="card-content"></div>
     <div id="vcomments"></div>
 </div>
-
-<script src="/libs/gitalk/gitalk.min.js"></script>
-<script src="../../js/Valine.min.js"></script>
+<style>
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+    .vpower.txt-right {
+        display: none;
+    }
+    .vcards{
+        padding: 0 15px;
+    }
+    .vcount {
+        padding: 0 10px !important;
+    }
+</style>
+<!-- <script src="/libs/gitalk/gitalk.min.js"></script> -->
+<script src="/js/Valine.min.js"></script>
 <script>
     new Valine({
-        el: '#vcomments',
-        appId: 'RSRAok96RSeswr5PnYfcRU5G-gzGzoHsz',
-        appKey: 'gMEBBmb61iRymM4LKWiDNsKA'
-    })
+        el: "#vcomments",
+        appId: "RSRAok96RSeswr5PnYfcRU5G-gzGzoHsz",
+        appKey: "gMEBBmb61iRymM4LKWiDNsKA",
+        placeholder: '有什么想对我说的话，请留言吧！'
+    });
 </script>
 <!-- <script>
     let gitalk = new Gitalk({
@@ -456,6 +496,7 @@
     </div>
 </main>
 
+    </main>
 
     <footer class="page-footer bg-color">
     
@@ -495,7 +536,7 @@
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="3138200095"
+                   id="12289532682"
                    fixed='true'
                    autoplay='false'
                    theme='#42b983'
@@ -511,6 +552,10 @@
 
 <script src="/libs/aplayer/APlayer.min.js"></script>
 <script src="/libs/aplayer/Meting.min.js"></script>
+
+
+
+  
 
     
 
@@ -528,7 +573,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">782</span>
+                        class="white-color">68.6k</span>
             
             
             

@@ -52,10 +52,24 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="程序猿小野" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="程序猿小野" type="application/atom+xml">
 </head>
+
+<!-- <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script> -->
+
+<!-- <script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script> -->
+
+<script>
+
+ // 对所有链接跳转事件绑定pjax容器navContainer
+//  $(document).pjax('a:not(a[target="_blank"])', '#pjax-container', {fragment: '#pjax-container', timeout: 8000});
+
+
+</script>
+
+  
 
 
 <body>
@@ -311,14 +325,15 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
+    <main id="pjax-container">
+        <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
                 
-                程序猿小野
+                前端攻城狮-程序猿小野
                 
             </div>
 
@@ -380,11 +395,56 @@
                 
                 
                 
-                <a href="/categories/JavaScript/" title="JavaScript: 1">
+                <a href="/categories/JavaScript/" title="JavaScript: 21">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             style="background-color: #F9EBEA;">JavaScript
+                        <span class="tag-length">21</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/ElementUI/" title="ElementUI: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F5EEF8;">ElementUI
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/Vue2-0/" title="Vue2.0: 3">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #D5F5E3;">Vue2.0
+                        <span class="tag-length">3</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/CSS3/" title="CSS3: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #E8F8F5;">CSS3
                         <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/IE%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/" title="IE浏览器兼容性问题: 5">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #FEF9E7;">IE浏览器兼容性问题
+                        <span class="tag-length">5</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/MySQL/" title="MySQL: 6">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F8F9F9;">MySQL
+                        <span class="tag-length">6</span>
                     </span>
                 </a>
                 
@@ -431,7 +491,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"JavaScript","max":2}],
+            indicator: [{"name":"JavaScript","max":22},{"name":"ElementUI","max":22},{"name":"Vue2.0","max":22},{"name":"CSS3","max":22},{"name":"IE浏览器兼容性问题","max":22},{"name":"MySQL","max":22}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -442,7 +502,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [1],
+                    value : [21,2,3,1,5,6],
                     name : '文章分类数量'
                 }
             ]
@@ -456,6 +516,7 @@
 
 </main>
 
+    </main>
 
     <footer class="page-footer bg-color">
     
@@ -495,7 +556,7 @@
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="3138200095"
+                   id="12289532682"
                    fixed='true'
                    autoplay='false'
                    theme='#42b983'
@@ -511,6 +572,10 @@
 
 <script src="/libs/aplayer/APlayer.min.js"></script>
 <script src="/libs/aplayer/Meting.min.js"></script>
+
+
+
+  
 
     
 
@@ -528,7 +593,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">782</span>
+                        class="white-color">68.6k</span>
             
             
             
